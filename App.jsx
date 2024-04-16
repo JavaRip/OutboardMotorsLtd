@@ -1,8 +1,11 @@
 import { ThemeProvider } from '@emotion/react';
-import { Typography, Stack, Card, Box } from '@mui/material';
+import { Button, MobileStepper, Paper, Typography, Stack, Card, Box } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import { useState, useEffect, useRef } from 'react';
+import { Star } from '@mui/icons-material';
 
 const theme = createTheme({
     pallette: {
@@ -28,9 +31,20 @@ const theme = createTheme({
 })
 
 export default function App() {
+    const [activeStep, setActiveStep] = useState(0);
+    const intervalRef = useRef(null); // Using useRef to store the interval ID
+
+    // Clears the interval
+    const clearAutoScroll = () => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
+        }
+    };
+
     return (
         <ThemeProvider theme={theme}>
-            <Box sx={{ background: 'skyblue', height: '100dvh', width: '100dvw'}}>
+            <Box sx={{ background: 'skyblue', height: '100dvh', width: '100dvw' }}>
                 <Box height='100%'>
                     <Stack
                         maxWidth='80rem'
@@ -61,9 +75,27 @@ export default function App() {
                                 Outboard Motors Ltd
                             </Typography>
 
-                            <Typography mt={4} textAlign='center' variant='h2'>
-                                Getting you back on the water
-                            </Typography>
+                            <Box width='30rem' margin='0 auto'>
+                                <Box
+                                    sx={{
+                                        width: '100%',
+                                        maxWidth: '40rem',
+                                        p: 2,
+                                        width: '100%',
+                                    }}
+                                >
+                                    <Typography variant='h5' mt={1} textAlign='center'>
+                                        Top rated outboard motor dealer
+                                    </Typography>
+                                    <Stack justifyContent='center' direction='row'>
+                                        <StarRateIcon />
+                                        <StarRateIcon />
+                                        <StarRateIcon />
+                                        <StarRateIcon />
+                                        <StarRateIcon />
+                                    </Stack>
+                                </Box>
+                            </Box>
 
                             <Box margin='2rem auto'>
                                 <Stack mb={1} gap={2} direction='row'>
