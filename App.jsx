@@ -37,7 +37,7 @@ const theme = createTheme({
 export default function App() {
     return (
         <ThemeProvider theme={theme}>
-            <Box sx={{ background: 'skyblue', height: '100dvh', width: '100dvw' }}>
+            <Box sx={{ background: 'skyblue', height: '100vh', width: '100dvw' }}>
                 <Box height='100%'>
                     <Stack
                         maxWidth='80rem'
@@ -155,7 +155,7 @@ export default function App() {
                     </Stack>
                 </Box>
             </Box>
-            <Box sx={{ background: 'lightgray', height: '100dvh' }}>
+            <Box sx={{ background: 'lightgray', height: '100vh' }}>
                 <Stack
                     direction={{
                         sm: 'column',
