@@ -171,7 +171,6 @@ export default function App() {
                     pb={4}
                 >
                     <Box
-                        outline='2px solid darkgray'
                         height={340}
                         minHeight={340}
                         width={340}
@@ -258,7 +257,7 @@ export default function App() {
                         </Stack>
 
                         <Box
-                            width={500}
+                            width={480}
                             margin='0 auto'
                             sx={{
                                 margin: {
@@ -277,31 +276,31 @@ export default function App() {
                                 ensuring every boat worked on runs smoothly and reliably.
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • Servicing
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • No spark diagnostic
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • Low compression
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • Rebuilds
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • Outboard Sales
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • No start fix
                             </Typography>
 
-                            <Typography variant='body1'>
+                            <Typography variant='body1' width='max-content'>
                                 • Health check
                             </Typography>
                         </Box>

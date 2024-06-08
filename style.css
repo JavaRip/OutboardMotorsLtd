@@ -10,3 +10,7 @@ img {
   object-fit: contain;
   max-width: 1000%;
 }
+
+body {
+  background-color: lightgray;
+}
