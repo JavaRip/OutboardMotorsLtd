@@ -155,7 +155,7 @@ export default function App() {
                     </Stack>
                 </Box>
             </Box>
-            <Box sx={{ background: 'lightgray', height: '100vh' }}>
+            <Box sx={{ background: 'lightgray', height: '100vh', minHeight: 'max-content' }}>
                 <Stack
                     direction={{
                         sm: 'column',
@@ -258,6 +258,7 @@ export default function App() {
 
                         <Box
                             width={480}
+                            maxWidth={'100%'}
                             margin='0 auto'
                             sx={{
                                 margin: {
