@@ -155,15 +155,18 @@ export default function App() {
                     </Stack>
                 </Box>
             </Box>
-            <Box sx={{ background: 'lightgray', height: '100vh', minHeight: 'max-content' }}>
+            <Box
+                sx={{
+                    background: 'lightgray',
+                    height: '100vh',
+                    minHeight: 'max-content',
+                }}>
                 <Stack
                     direction={{
                         sm: 'column',
                         md: 'row',
                     }}
                     sx={{
-                        height: '100%',
-                        width: '100%',
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: 4,
@@ -189,7 +192,6 @@ export default function App() {
                         <img src='/xav_in_boat.jpg' alt='placeholder' />
                     </Box>
                     <Box
-                        height={340}
                         width={340}
                         sx={{
                             width: '100%',
