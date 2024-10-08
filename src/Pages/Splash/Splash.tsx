@@ -234,6 +234,7 @@ function WelcomeSection(): JSX.Element {
                     <Box
                         sx={{
                             width: '800px',
+                            maxWidth: '100%',
                             position: 'relative',
                         }}
                     >
@@ -241,6 +242,7 @@ function WelcomeSection(): JSX.Element {
                             sx={{
                                 position: 'relative',
                                 width: 'max-content',
+                                maxWidth: '100%',
                                 margin: 'auto',
                             }}
                         >
@@ -263,6 +265,7 @@ function WelcomeSection(): JSX.Element {
                                     textAlign: 'center',
                                     color: theme.palette.secondary.contrastText,
                                     width: 'max-content',
+                                    maxWidth: '100%',
                                     margin: 'auto',
                                     position: 'relative',
                                 }}

@@ -14,6 +14,7 @@ export default function AnimatedBox({ children }: AnimatedBoxProps) {
         <Box
             ref={ref}
             className={inView ? 'animated' : ''}
+            width='100%'
             sx={{
                 opacity: 0,
                 transform: 'translateY(20px)',
