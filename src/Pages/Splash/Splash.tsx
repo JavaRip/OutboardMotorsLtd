@@ -20,7 +20,7 @@ function ActionAreaCard({
     body: string,
 }) {
     return (
-        <Card sx={{ width: 345 }}>
+        <Card sx={{ width:345 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -120,7 +120,12 @@ function VideoSection(): JSX.Element {
         <Stack
             alignItems='center'
             height='calc(100vh - 5rem)'
-            minHeight='700px'
+            minHeight={{
+                xs: '1200px',
+                sm: '1200px',
+                md: '1200px',
+                lg: '700px',
+            }}
             justifyContent='center'
             position='relative'
         >
@@ -154,11 +159,22 @@ function VideoSection(): JSX.Element {
             </Box>
 
             <Stack
-                direction='row'
-                gap='1rem'
+                direction={{
+                    xs: 'column',
+                    sm: 'column',
+                    md: 'column',
+                    lg: 'row',
+                }}
+                width={{
+                    xs: 'auto',
+                    sm: 'auto',
+                    md: 'auto',
+                    lg: '100%',
+                }}
+                gap='9rem'
                 justifyContent='space-between'
-                width='100%'
                 maxWidth='1450px'
+                minHeight='max-content'
                 position='absolute'
                 bottom='100px'
                 p={4}
@@ -206,9 +222,14 @@ function WelcomeSection(): JSX.Element {
         >
             <AnimatedBox>
                 <Stack
-                    direction="row"
                     alignItems="center"
                     pt={16}
+                    direction={{
+                        xs: 'column',
+                        sm: 'column',
+                        md: 'column',
+                        lg: 'row',
+                    }}
                 >
                     <Box
                         sx={{
@@ -319,6 +340,7 @@ function WelcomeSection(): JSX.Element {
                     position='relative'
                     alignItems="center"
                     justifyContent="center"
+                    direction='column'
                 >
                     <Typography
                         sx={{
@@ -332,7 +354,12 @@ function WelcomeSection(): JSX.Element {
                     </Typography>
 
                     <Stack
-                        direction='row'
+                        direction={{
+                            xs: 'column',
+                            sm: 'column',
+                            md: 'column',
+                            lg: 'row'
+                        }}
                         justifyContent='center'
                         gap='1rem'
                         mt={4}
@@ -340,19 +367,19 @@ function WelcomeSection(): JSX.Element {
                         <ActionAreaCard
                             image='outboard-engine.jpg'
                             title='Servicing & Repairs'
-                            body='We offer a wide range of services to keep your outboard motor running smoothly.'
+                            body='Keep your outboard motor in top condition with our comprehensive servicing and repair solutions.'
                         />
 
                         <ActionAreaCard
                             image='xav-in-boat.jpg'
                             title='Collection & Delivery'
-                            body='We offer a wide range of services to keep your outboard motor running smoothly.'
+                            body='Enjoy hassle-free collection and delivery for your outboard motor.'
                         />
 
                         <ActionAreaCard
                             image='engine.png'
                             title='Specialist Services'
-                            body='We offer a wide range of services to keep your outboard motor running smoothly.'
+                            body='Benefit from our specialist services for performance enhancements and modifications.'
                         />
                     </Stack>
                 </Stack>
