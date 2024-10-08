@@ -25,7 +25,7 @@ function ActionAreaCard({
                     component="img"
                     height="440"
                     image={image}
-                    alt="green iguana"
+                    alt={title}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
@@ -287,7 +287,7 @@ function WelcomeSection(): JSX.Element {
                         }}
                         height='100%'
                         width='100%'
-                        src='engine.png'
+                        src='graphic.png'
                         alt='Outboard Motor'
                     />
 
@@ -342,13 +342,13 @@ function WelcomeSection(): JSX.Element {
 
                     <ActionAreaCard
                         image='xav-in-boat.jpg'
-                        title='Servicing & Repairs'
+                        title='Collection & Delivery'
                         body='We offer a wide range of services to keep your outboard motor running smoothly.'
                     />
 
                     <ActionAreaCard
                         image='engine.png'
-                        title='Servicing & Repairs'
+                        title='Specialist Services'
                         body='We offer a wide range of services to keep your outboard motor running smoothly.'
                     />
                 </Stack>
