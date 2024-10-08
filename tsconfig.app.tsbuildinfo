@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/Components/index.tsx","./src/Components/AnimatedBox/AnimatedBox.tsx","./src/Components/AnimatedBox/index.ts","./src/Components/NavBar/NavBar.tsx","./src/Components/NavBar/index.ts","./src/Pages/Splash/Splash.tsx","./src/Pages/Splash/index.ts","./src/utils/Theme.ts"],"version":"5.6.2"}
