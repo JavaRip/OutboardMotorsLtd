@@ -223,6 +223,7 @@ function WelcomeSection(): JSX.Element {
             <AnimatedBox>
                 <Stack
                     alignItems="center"
+                    justifyContent="center"
                     pt={16}
                     direction={{
                         xs: 'column',
@@ -308,7 +309,7 @@ function WelcomeSection(): JSX.Element {
                     >
                         <img
                             style={{
-                                objectFit: 'cover'
+                                objectFit: 'cover',
                             }}
                             height='100%'
                             width='100%'
