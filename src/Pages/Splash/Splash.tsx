@@ -294,6 +294,7 @@ function WelcomeSection(): JSX.Element {
                                 color: theme.palette.secondary.contrastText,
                                 fontSize: '20px',
                                 marginTop: '2rem',
+                                marginBottom: '4rem',
                             }}
                             variant='body1'
                         >
